@@ -30,8 +30,10 @@ $(document).ready(function(){
     // Toast
     // $('.toast').toast('show');
 
+    
+
     $('.toast').toast({
-        delay: 5000,
+        delay: 10000,
         autohide: false
     });    
 

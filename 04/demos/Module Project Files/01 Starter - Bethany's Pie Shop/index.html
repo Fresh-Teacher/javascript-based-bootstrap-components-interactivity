@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,9 @@
     <link rel="stylesheet" href="css/main.css">
 
 </head>
+
 <body>
-    
+
     <!-- Main Container -->
     <div class="container main">
 
@@ -69,8 +71,10 @@
                 <p class="text-muted"><small>See all pies we have to offer.</small></p>
                 <!-- <a href="allpies.html" class="btn btn-outline-info btn-sm">View All Pies</a> -->
                 <div class="btn-group" id="pieCatergories">
-                    <a class="btn btn-outline-info btn-sm" href="allpies.html" data-toggle="tooltip" title="View a list of <b><i>all</i></b> our pies">All Pies</a>
-                    <button class="btn btn-outline-info dropdown-toggle dropdown-toggle-split btn-sm" type="button" id="allPiesDropdown" data-toggle="dropdown">
+                    <a class="btn btn-outline-info btn-sm" href="allpies.html" data-toggle="tooltip"
+                        title="View a list of <b><i>all</i></b> our pies">All Pies</a>
+                    <button class="btn btn-outline-info dropdown-toggle dropdown-toggle-split btn-sm" type="button"
+                        id="allPiesDropdown" data-toggle="dropdown">
                         <span class="sr-only">Toggle Dropdown</span>
                     </button>
                     <div class="dropdown-menu">
@@ -95,27 +99,79 @@
                 <img src="images/products/fruit.jpg" class="w-75 rounded shadow mb-3 img-fluid">
                 <h4>Fruit Pies</h4>
                 <p class="text-muted"><small>In the mood for fruit? We got some.</small></p>
-                <a href="fruitpies.html" class="btn btn-outline-info btn-sm" data-toggle="tooltip" title="View all our Fruit Pies">Fruit Pies</a>
+                <a href="fruitpies.html" class="btn btn-outline-info btn-sm" data-toggle="tooltip"
+                    title="View all our Fruit Pies">Fruit Pies</a>
             </div>
         </div>
 
         <div class="container px-5">
-            <button id="tooltipButton" type="button" class="btn btn-link" onclick="showTooltips()">Show Tooltips</button>
+            <button id="tooltipButton" type="button" class="btn btn-link" onclick="showTooltips()">Show
+                Tooltips</button>
         </div>
 
         <!-- History -->
         <div class="d-flex flex-column mt-3 px-5 py-3">
-                <h3 class="title">Our History</h3>
-                <div class="px-3 history">
-                    <p class="text-muted">
-                        <button type="button" class="btn btn-link" onclick="displayCategories()">View Pie Catergories</button>
-                    </p>
-                    
-                    <p class="text-muted">"For many years, <strong>Bethany</strong> has been baking the most delicious pies at her home. In 2013, we opened our first store in Brussels (Belgium) in a cosy little street near the Grand Market. People from all over the world fell in love with the soft cakes, heavenly cheese cakes, spicy apple pies. The store became a success in no time.</p>
-                    <p class="text-muted">In 2015, no less than 100 pies were sold every day and Bethany's Pie Shop moved into a larger building. After receiving many requests, it became clear that our next step was making it possible to order pies from the comfort of your own home and from anywhere in the world. You are now looking at the result of this: our very own webstore, making it possible to order Bethany's delicious pies whenever you feel like it!"</p>
+            <h3 class="title">Our History</h3>
+            <div class="px-3 history">
+                <p class="text-muted">
+                    <button type="button" class="btn btn-link" onclick="displayCategories()">View Pie
+                        Catergories</button>
+                </p>
+                <div class="collapse">
+                    <p class="text-muted">"For many years, <strong>Bethany</strong> has been baking the most delicious
+                        pies
+                        at her home. In 2013, we opened our first store in Brussels (Belgium) in a cosy little street
+                        near
+                        the Grand Market. People from all over the world fell in love with the soft cakes, heavenly
+                        cheese
+                        cakes, spicy apple pies. The store became a success in no time.</p>
+                        <div id="history" class="collapse">
+                    <p class="text-muted">In 2015, no less than 100 pies were sold every day and Bethany's Pie Shop
+                        moved
+                        into a larger building. After receiving many requests, it became clear that our next step was
+                        making
+                        it possible to order pies from the comfort of your own home and from anywhere in the world. You
+                        are
+                        now looking at the result of this: our very own webstore, making it possible to order Bethany's
+                        delicious pies whenever you feel like it!"</p>
                 </div>
+                <a href="#history" data-toggle="collapse">Show more...</a>
+            </div>
         </div>
 
+        <div class="d-flex flex-column mt-5 px-5 py-4"></div>
+        <h3 class="title">Recipe of the Month</h3>
+
+        <div class="according" id="mainRecipe">
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link button-block text-left" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo">Step 1</button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse show" data-parent="#mainRecipe">
+                    <div class="card-body">
+                        First and foremost, choose a dish that you've never tasted! We have the best dish known as Omugoyo in Luganda Language. Try it out today!
+                    </div>
+                </div>
+                    <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link button-block text-left" type="button" data-toggle="collapse"
+                            data-target="#collapseOne">Step 2</button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" data-parent="#mainRecipe">
+                    <div class="card-body">
+Secondly,   swallow you pride and accept all that we shall give you and taste it. We bet that you'll like it!                  </div>
+                </div>
+            </div>
+            </div>
+            <button class="btn btn-primary my-4" type="button" onclick="()">Expand All</button>
+                        <button class="btn btn-primary my-4" type="button" onclick="()">Close All</button>
+
+        </div>
         <!-- Footer -->
         <footer class="d-flex flex-column my-2 pb-3 footer align-items-center text-muted">
             <p><strong>Our address is</strong></p>
@@ -132,4 +188,5 @@
     <script src="js/main.js"></script>
 
 </body>
+
 </html>

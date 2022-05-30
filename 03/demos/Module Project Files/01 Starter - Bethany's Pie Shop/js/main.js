@@ -13,7 +13,15 @@ function displayCategories(){
     $('#pieCatergories').dropdown('toggle');
 }
 
+//pop over categories
+$('[data-toggle="popover"]').popover({
+trigger: 'hover'
+});
+
 // Dropdown events
 $('#pieCatergories').on('show.bs.dropdown', function () {
     // alert('This')
 })
+
+//toast
+$('.toast').toast('show');

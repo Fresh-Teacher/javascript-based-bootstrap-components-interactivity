@@ -33,7 +33,12 @@ $(document).ready(function(){
     $('.toast').toast({
         delay: 5000,
         autohide: false
-    });    
+    });
+
+    //collapse collapse
+    $('.collapse').collapse({
+        toggle: false
+    });
 
 });
 
@@ -85,3 +90,12 @@ function myCountDown(){
 $('.toast').on('hide.bs.toast', function () {
     console.log('Message was hidden')
 })
+
+//collapse
+function expandAll(){
+$('#collapseOne, #collapseTwo').collapse(show);
+}
+
+functioncloseAll(){
+$('#collapseOne, #collapseTwo').collapse(hide);
+}

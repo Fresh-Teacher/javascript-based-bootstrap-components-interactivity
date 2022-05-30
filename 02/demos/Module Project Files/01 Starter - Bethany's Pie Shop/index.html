@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,9 @@
     <link rel="stylesheet" href="css/main.css">
 
 </head>
+
 <body>
-    
+
     <!-- Main Container -->
     <div class="container main">
 
@@ -47,50 +49,85 @@
             <h3 class="title">Browse Our Pies</h3>
         </div>
 
+        <div class="toast" role="alert">
+            <div class="toast-header">
+                <img src="images/bethanysmall.jpg" alt="bethany" class="mr-2">
+                <strong class="mr-auto">Monthly Sale</strong>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">
+                <span>&times;</span></button>
+            </div>
+            <div class="toast-body">Check out our deals</div>
+        </div>
         <div class="d-flex flex-row justify-content-around my-2 flex-wrap flex-md-nowrap">
             <div class="d-flex flex-column align-items-center border-right mb-3 mb-md-0">
                 <img src="images/products/applepie.jpg" class="w-75 rounded shadow mb-3 img-fluid">
                 <h4>All Pies</h4>
                 <p class="text-muted"><small>See all pies we have to offer.</small></p>
-                <a href="allpies.html" class="btn btn-outline-info btn-sm">View All Pies</a>
-            </div>
-            <div class="d-flex flex-column align-items-center border-right mb-3 mb-md-0">
-                <img src="images/products/cheesecake.jpg" class="w-75 rounded shadow mb-3 img-fluid">
-                <h4>Cheese Cakes</h4>
-                <p class="text-muted"><small>We also make cheese cakes.</small></p>
-                <a href="#" class="btn btn-outline-info btn-sm">View Cheese Cakes</a>
-            </div>
-            <div class="d-flex flex-column align-items-center mb-3 mb-md-0">
-                <img src="images/products/fruit.jpg" class="w-75 rounded shadow mb-3 img-fluid">
-                <h4>Fruit Pies</h4>
-                <p class="text-muted"><small>In the mood for fruit? We got some.</small></p>
-                <a href="fruitpies.html" class="btn btn-outline-info btn-sm">View Fruit Pies</a>
-            </div>
-        </div>
+                <!-- <a href="allpies.html" class="btn btn-outline-info btn-sm">View All Pies</a>
+            </div> -->
+                <div class="btn-group" id="pieCategories">
+                    <a class="btn btn-outline-info btn-sm" href="allpies.html">
+                        View All Pies</a>
+                    </button>
+                    <button class="btn btn-outline-info dropdown-toggle" type="button" data-toggle="dropdown">
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <h6 class="dropdown-header">Seasonal Catergories</h6>
+                        <a href="#" class="dropdown-item">Fruit Pies</a>
+                        <a href="#" class="dropdown-item">Chesse Cakes</a>
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">Seasonal Catergories</h6>
+                        <a href="#" class="dropdown-item">Thanksgiving</a>
+                        <a href="#" class="dropdown-item">Christmas</a>
 
-        <!-- History -->
-        <div class="d-flex flex-column mt-5 px-5 py-3">
+                    </div>
+                </div>
+                <div class="d-flex flex-column align-items-center border-right mb-3 mb-md-0">
+                    <img src="images/products/cheesecake.jpg" class="w-75 rounded shadow mb-3 img-fluid">
+                    <h4>Cheese Cakes</h4>
+                    <p class="text-muted"><small>We also make cheese cakes.</small></p>
+                    <a href="#" class="btn btn-outline-info btn-sm">View Cheese Cakes</a>
+                </div>
+                <div class="d-flex flex-column align-items-center mb-3 mb-md-0">
+                    <img src="images/products/fruit.jpg" class="w-75 rounded shadow mb-3 img-fluid">
+                    <h4>Fruit Pies</h4>
+                    <p class="text-muted"><small>In the mood for fruit? We got some.</small></p>
+                    <a href="fruitpies.html" class="btn btn-outline-info btn-sm">View Fruit Pies</a>
+                </div>
+            </div>
+
+            <!-- History -->
+            <div class="d-flex flex-column mt-5 px-5 py-3">
                 <h3 class="title">Our History</h3>
                 <div class="px-3 history">
-                    <p class="text-muted">"For many years, <strong>Bethany</strong> has been baking the most delicious pies at her home. In 2013, we opened our first store in Brussels (Belgium) in a cosy little street near the Grand Market. People from all over the world fell in love with the soft cakes, heavenly cheese cakes, spicy apple pies... The store became a success in no time.</p>
-                    <p class="text-muted">In 2015, no less than 100 pies were sold every day and Bethany's Pie Shop moved into a larger building. After receiving many requests, it became clear that our next step was making it possible to order pies from the comfort of your own home and from anywhere in the world. You are now looking at the result of this: our very own webstore, making it possible to order Bethany's delicious pies whenever you feel like it!"</p>
+                    <button type="button" onclick="displayCategories()">View Pie Categories</a></p></button>
+                    <p class="text-muted">"For many years, <strong>Bethany</strong> has been baking the most delicious
+                        pies at her home. In 2013, we opened our first store in Brussels (Belgium) in a cosy little
+                        street near the Grand Market. People from all over the world fell in love with the soft cakes,
+                        heavenly cheese cakes, spicy apple pies... The store became a success in no time.</p>
+                    <p class="text-muted">In 2015, no less than 100 pies were sold every day and Bethany's Pie Shop
+                        moved into a larger building. After receiving many requests, it became clear that our next step
+                        was making it possible to order pies from the comfort of your own home and from anywhere in the
+                        world. You are now looking at the result of this: our very own webstore, making it possible to
+                        order Bethany's delicious pies whenever you feel like it!"</p>
                 </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="d-flex flex-column my-2 pb-3 footer align-items-center text-muted">
+                <p><strong>Our address is</strong></p>
+                <p class="italic">Bakery Street 555 Brussels Belgium</p>
+                <p>© 2020 Bethany's Pie Shop - All rights reserved</p>
+            </footer>
+
         </div>
 
-        <!-- Footer -->
-        <footer class="d-flex flex-column my-2 pb-3 footer align-items-center text-muted">
-            <p><strong>Our address is</strong></p>
-            <p class="italic">Bakery Street 555 Brussels Belgium</p>
-            <p>© 2020 Bethany's Pie Shop - All rights reserved</p>
-        </footer>
-
-    </div>
-
-    <!-- External JS Files -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+        <!-- External JS Files -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
 
 </body>
 </html>
