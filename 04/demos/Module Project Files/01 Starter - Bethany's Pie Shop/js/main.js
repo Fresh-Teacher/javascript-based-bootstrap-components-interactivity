@@ -1,6 +1,7 @@
 // Variables
 let tooltipButton = document.getElementById('tooltipButton');
 let popButton = document.getElementById('popButton');
+let video1 = document.getElementById('video1');
 
 // On Ready
 $(document).ready(function(){
@@ -39,6 +40,13 @@ $(document).ready(function(){
     $('.collapse').collapse({
         toggle: false
     });
+
+//modal
+$('modal').modal({
+    show: false,
+    backdrop: 'static',
+
+})
 
 });
 
@@ -96,6 +104,21 @@ function expandAll(){
 $('#collapseOne, #collapseTwo').collapse(show);
 }
 
+//Carousel
+$('.carousel').carousel({
+    interval: 3000,
+
+});
+
 functioncloseAll(){
 $('#collapseOne, #collapseTwo').collapse(hide);
+}
+//Carousel
+function gotoThumbnails(e){
+    $('.carousel').carousel(e);
+}
+
+//Modal
+video1.onpause = function alert(){
+    alert('Please wait')
 }

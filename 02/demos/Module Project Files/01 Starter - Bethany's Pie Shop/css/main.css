@@ -94,6 +94,11 @@ video {
     height: auto !important;
 }
 
+.modal-content {
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .6);
+
+}
 /* Responsive */
 /* Extra small devices (phones, less than 768px) */
 
@@ -111,5 +116,7 @@ video {
 
 /* Large devices (large desktops,  and up) */
 @media (min-width: 1200px) {
-
+ .modal-xl{
+     max-width: 99;
+ }
 }

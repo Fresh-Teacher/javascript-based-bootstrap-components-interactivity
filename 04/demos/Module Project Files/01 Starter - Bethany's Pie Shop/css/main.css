@@ -104,6 +104,13 @@ video {
     background-color: rgba(0, 0, 50, .3);
     border-radius: 25px;
 }
+
+.thumbnail{
+    width: auto;
+    height: 100px;
+    cursor: pointer;
+}
+
 /* Responsive */
 /* Extra small devices (phones, less than 768px) */
 
